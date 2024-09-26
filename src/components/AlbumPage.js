@@ -169,6 +169,5 @@ const styles = {
     fontSize: '16px',
   },
 };
-
 // Exporting the AlbumPage component
 export default AlbumPage;

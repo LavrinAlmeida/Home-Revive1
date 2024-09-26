@@ -6,7 +6,7 @@ const LandingPage = () => {
     <div style={styles.container}>
       <div style={styles.textContainer}>
         <h1>Welcome to the Landing Page</h1>
-        <h3>Name: LAVRIN ALMEIDA Roll No. 02 PID: 221002 Subject: IP-Home_Assignment</h3>
+        <h3>Name: LAVRIN ALMEIDA Roll No. 02 Subject: IP-Home_Assignment</h3>
       </div>
       <Link to="/album" style={styles.link}>View Album</Link>
     </div>
