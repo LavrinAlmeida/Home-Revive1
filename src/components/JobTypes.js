@@ -19,6 +19,10 @@ function JobTypes() {
     setSelectedJobType(type);
   };
 
+  const handleJobClick = (job) => {
+    window.open(`/jobs/${job.id}`, '_blank');
+  };
+
   return (
     <div className="job-types">
       <h2>Job Types</h2>
@@ -36,7 +40,7 @@ function JobTypes() {
           <h3>Available Jobs for {selectedJobType}</h3>
           <ul>
             {jobsList[selectedJobType].map((job) => (
-              <li key={job.id}>
+              <li key={job.id} onClick={() => handleJobClick(job)}>
                 <strong>{job.job}</strong> - {job.location}
               </li>
             ))}
